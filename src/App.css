@@ -1,14 +1,14 @@
 :root{
-  --Color-fondo: #4b3c53;
+  --Color-fondo: #7c5290;
   --Color-fuente: #e0e0e0;
   --Color-ilu: #a8d8ea;
   --Color-fuente-btn: #1a1a2e;
-  --Color-Sombra-btn: 	#a8d8ea33;
+  --Color-sombra-btn: #acd5e41f;
   /* config hover */
   --Color-ilu-hover: #89c4e1;
   --Color-sombra-btn-hover: #A8D8EA59;
 }
-
+ 
 .logo.vite:hover {
   filter: drop-shadow(0 0 2em #747bff);
 }
@@ -146,8 +146,8 @@ button {
 .sidebar {
   width: 260px;
   flex-shrink: 0;
-  background-color: var(--Color-fondo);
-  border-right: 1px solid var(--Color-fondo);
+  background-color: var(--Color-sombra-btn);
+  border-right: 1px solid var(--Color-sombra-btn);
   padding: 1rem;
   overflow-y: auto;
 }
@@ -163,13 +163,13 @@ button {
   color: var(--Color-fuente);
   word-break: break-all;
   text-align: left;
-  background-color: var(--Color-fondo);
+  background-color: var(--Color-sombra-btn);
   padding: 0.4rem;
   border-radius: 4px;
 }
 .placeholder {
   font-size: 0.75rem;
-  color: var(--Color-fondo);
+  color: var(--Color-fuente);
   text-align: left;
 }
 .editor {
@@ -177,8 +177,8 @@ button {
   display: flex;
   padding: 1rem;
 }
-
-.editor textearea {
+ 
+.editor textarea {
     flex: 1;
   resize: none;
   background-color: #131318;
@@ -217,13 +217,13 @@ button {
     border-color: var(--Color-ilu);
   }
 
-  .open-proyect,
+  .open-proyect:hover,
   .create-proyect:hover {
     background-color: var(--Color-ilu-hover);
     border-color: var(--Color-ilu-hover);
   }
 
-  .open-proyect,
+  .open-proyect:active,
   .create-proyect:active {
     background-color: #6db3d4;
     border-color: #6db3d4;

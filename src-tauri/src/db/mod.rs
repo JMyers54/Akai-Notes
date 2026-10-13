@@ -1,4 +1,4 @@
-
+pub mod queries;
 use std::sync::{Mutex, MutexGuard};
 use rusqlite::Connection;
 use tauri::{Manager, State};

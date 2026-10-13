@@ -11,13 +11,13 @@ function Editor() {
         setPath(project?.path ?? null);
     });
     return (
-        <div class="Workspace">
+        <div class="workspace">
             <aside class="sidebar">
                 <h2>Akai Notes</h2>
                 <Show when={path()}>
                     <p class="project-path" title={path()!}>{path()}</p>
                 </Show>
-                <p class="OpenHolder">Explorador: T-011</p>
+                <p class="placeholder">Explorador: T-011</p>
             </aside>
             <main class="editor">
                 <textarea placeholder="ya puedes escribir"></textarea>
